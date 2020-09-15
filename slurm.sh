@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=ls-sim
-#SBATCH --output=logs/create_fluctuations_%A_%a.out
+#SBATCH --output=logs/ls-sim_%A_%a.out
 #SBATCH --array=0-3399
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
