@@ -34,7 +34,7 @@ def f(filename, n_source, n_target, prop_target, prop_source = 0.5,\
 
 
 if __name__ == "__main__":
-    betas = [3, 5]
+    beta = 3
     sample_sizes = np.load('sample_sizes.npy')
     label = np.load('label.npy')
     print('Done')
@@ -42,12 +42,12 @@ if __name__ == "__main__":
     iteration = i % 100
 
     j = i // 100
-    k = j % 17
+    k = j % 34
     n_source, n_target = sample_sizes[k, 0], sample_sizes[k, 1]
     labeled = label[k]
 
-    j = j // 17
-    beta = betas[j]
+    #j = j // 17
+    #beta = betas[j]
     kernel_df = beta
     print(f'n_s: {n_source}, n_t: {n_target}, kernel_df: {kernel_df}, beta: {beta}, iter: {iteration}, label: {labeled}')
 
