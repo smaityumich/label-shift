@@ -29,7 +29,7 @@ class DataGenerator():
     def bayesY(self, x):
         return [self.bayesDecision(u) for u in x]
 
-    def bayes_error(self, prop = 0.5, distance = 1):
+    def bayes_error(self, prop = 0.5, distance = 0.8):
         y = self.generateY(10000, prop)
         x = self.generateX(distance)
         #mu = distance/np.sqrt(self.d)
@@ -37,7 +37,7 @@ class DataGenerator():
         #return 1 - prop * norm.cdf(mu/2 + log_odds/mu) - (1-prop) * norm.cdf(mu/2 - log_odds/mu)
         return np.mean((y - np.array(self.bayesY(x)))**2)
         
-    def getData(self, n = 100, prop = 0.5, distance = 4):
+    def getData(self, n = 100, prop = 0.5, distance = 0.8):
         self.generateY(n, prop)
         self.generateX(distance)
         return np.array(self.x), np.array(self.y)
