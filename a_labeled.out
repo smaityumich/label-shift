@@ -1,0 +1,5 @@
+{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.1270168302054692, 'n_source': 100, 'n_target': 100, 'classical': 0.06, 'labeled': 0.07, 'mixture': 0.03, 'iter': 0}
+{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0201, 'n_source': 100, 'n_target': 100, 'classical': 0.05, 'labeled': 0.02, 'mixture': 0.0, 'iter': 0}
+{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0197, 'n_source': 100, 'n_target': 100, 'classical': 0.04, 'labeled': 0.04, 'mixture': 0.01, 'iter': 0}
+{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0191, 'n_source': 100, 'n_target': 100, 'classical': 0.21, 'labeled': 0.16, 'mixture': 0.13, 'iter': 0}
+{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0191, 'n_source': 800, 'n_target': 800, 'classical': 0.14, 'labeled': 0.08, 'iter': 0}

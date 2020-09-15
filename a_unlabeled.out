@@ -1,0 +1,4 @@
+{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0196, 'n_source': 100, 'n_target': 100, 'lipton': 0.36, 'oracle': 0.18, 'iter': 0}
+{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0193, 'n_source': 800, 'n_target': 800, 'lipton': 0.06, 'oracle': 0.07, 'iter': 0}
+{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.021, 'n_source': 800, 'n_target': 800, 'lipton': 0.21, 'oracle': 0.08, 'iter': 0}
+{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0186, 'n_source': 800, 'n_target': 800, 'lipton': 0.23, 'oracle': 0.06, 'iter': 0}
