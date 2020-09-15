@@ -34,8 +34,6 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0193, 'n_source': 25, 'n_target': 100, 'lipton': 0.54, 'oracle': 0.2, 'iter': 21}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0194, 'n_source': 25, 'n_target': 100, 'lipton': 0.54, 'oracle': 0.17, 'iter': 33}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.02, 'n_source': 25, 'n_target': 100, 'lipton': 0.67, 'oracle': 0.17, 'iter': 1}
-}
-
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0213, 'n_source': 25, 'n_target': 100, 'lipton': 0.59, 'oracle': 0.13, 'iter': 25}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0164, 'n_source': 25, 'n_target': 100, 'lipton': 0.5, 'oracle': 0.19, 'iter': 31}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0183, 'n_source': 25, 'n_target': 100, 'lipton': 0.23, 'oracle': 0.23, 'iter': 12}
@@ -143,7 +141,6 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.018, 'n_source': 50, 'n_target': 100, 'lipton': 0.45, 'oracle': 0.21, 'iter': 61}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0158, 'n_source': 50, 'n_target': 100, 'lipton': 0.23, 'oracle': 0.23, 'iter': 70}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.018, 'n_source': 50, 'n_target': 100, 'lipton': 0.52, 'oracle': 0.16, 'iter': 28}
-
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0188, 'n_source': 50, 'n_target': 100, 'lipton': 0.23, 'oracle': 0.23, 'iter': 56}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0209, 'n_source': 50, 'n_target': 100, 'lipton': 0.5, 'oracle': 0.22, 'iter': 22}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0208, 'n_source': 50, 'n_target': 100, 'lipton': 0.19, 'oracle': 0.19, 'iter': 29}
@@ -239,7 +236,8 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0206, 'n_source': 100, 'n_target': 100, 'lipton': 0.49, 'oracle': 0.09, 'iter': 83}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0206, 'n_source': 100, 'n_target': 100, 'lipton': 0.14, 'oracle': 0.13, 'iter': 88}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0181, 'n_source': 100, 'n_target': 100, 'lipton': 0.44, 'oracle': 0.2, 'iter': 3}
-{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0183, 'n_source': 100, 'n_target': 100, 'lipton': 0.45, 'oracle': 0.05, 'iter': 46}{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0194, 'n_source': 100, 'n_target': 100, 'lipton': 0.42, 'oracle': 0.19, 'iter': 95}
+{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0183, 'n_source': 100, 'n_target': 100, 'lipton': 0.45, 'oracle': 0.05, 'iter': 46}
+{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0194, 'n_source': 100, 'n_target': 100, 'lipton': 0.42, 'oracle': 0.19, 'iter': 95}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0167, 'n_source': 100, 'n_target': 100, 'lipton': 0.4, 'oracle': 0.18, 'iter': 52}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0171, 'n_source': 100, 'n_target': 100, 'lipton': 0.5, 'oracle': 0.12, 'iter': 51}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0209, 'n_source': 100, 'n_target': 100, 'lipton': 0.42, 'oracle': 0.21, 'iter': 48}
@@ -293,7 +291,6 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0196, 'n_source': 100, 'n_target': 100, 'lipton': 0.14, 'oracle': 0.14, 'iter': 15}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0181, 'n_source': 200, 'n_target': 100, 'lipton': 0.11, 'oracle': 0.12, 'iter': 84}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.02, 'n_source': 200, 'n_target': 100, 'lipton': 0.32, 'oracle': 0.2, 'iter': 78}
-0}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0196, 'n_source': 200, 'n_target': 100, 'lipton': 0.24, 'oracle': 0.11, 'iter': 80}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0202, 'n_source': 200, 'n_target': 100, 'lipton': 0.12, 'oracle': 0.12, 'iter': 74}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0191, 'n_source': 200, 'n_target': 100, 'lipton': 0.13, 'oracle': 0.13, 'iter': 77}
@@ -427,13 +424,11 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0228, 'n_source': 400, 'n_target': 100, 'lipton': 0.28, 'oracle': 0.08, 'iter': 49}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0208, 'n_source': 400, 'n_target': 100, 'lipton': 0.11, 'oracle': 0.11, 'iter': 72}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0213, 'n_source': 400, 'n_target': 100, 'lipton': 0.09, 'oracle': 0.1, 'iter': 40}
-
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0186, 'n_source': 400, 'n_target': 100, 'lipton': 0.12, 'oracle': 0.11, 'iter': 23}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0176, 'n_source': 400, 'n_target': 100, 'lipton': 0.29, 'oracle': 0.15, 'iter': 27}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0191, 'n_source': 400, 'n_target': 100, 'lipton': 0.3, 'oracle': 0.07, 'iter': 42}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0196, 'n_source': 400, 'n_target': 100, 'lipton': 0.34, 'oracle': 0.14, 'iter': 45}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.017, 'n_source': 400, 'n_target': 100, 'lipton': 0.1, 'oracle': 0.1, 'iter': 52}
-0}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0179, 'n_source': 400, 'n_target': 100, 'lipton': 0.13, 'oracle': 0.13, 'iter': 29}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0184, 'n_source': 400, 'n_target': 100, 'lipton': 0.29, 'oracle': 0.03, 'iter': 30}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0205, 'n_source': 400, 'n_target': 100, 'lipton': 0.32, 'oracle': 0.15, 'iter': 56}
@@ -453,7 +448,6 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0175, 'n_source': 400, 'n_target': 100, 'lipton': 0.26, 'oracle': 0.14, 'iter': 31}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0187, 'n_source': 400, 'n_target': 100, 'lipton': 0.25, 'oracle': 0.09, 'iter': 28}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.02, 'n_source': 400, 'n_target': 100, 'lipton': 0.14, 'oracle': 0.15, 'iter': 25}
-
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0193, 'n_source': 400, 'n_target': 100, 'lipton': 0.11, 'oracle': 0.11, 'iter': 60}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0199, 'n_source': 400, 'n_target': 100, 'lipton': 0.26, 'oracle': 0.07, 'iter': 9}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0169, 'n_source': 400, 'n_target': 100, 'lipton': 0.29, 'oracle': 0.06, 'iter': 21}
@@ -492,7 +486,6 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0187, 'n_source': 800, 'n_target': 100, 'lipton': 0.17, 'oracle': 0.1, 'iter': 10}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0215, 'n_source': 800, 'n_target': 100, 'lipton': 0.25, 'oracle': 0.05, 'iter': 9}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0193, 'n_source': 800, 'n_target': 100, 'lipton': 0.21, 'oracle': 0.06, 'iter': 8}
-
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0181, 'n_source': 800, 'n_target': 100, 'lipton': 0.27, 'oracle': 0.09, 'iter': 45}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0193, 'n_source': 800, 'n_target': 100, 'lipton': 0.31, 'oracle': 0.08, 'iter': 59}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0195, 'n_source': 800, 'n_target': 100, 'lipton': 0.22, 'oracle': 0.06, 'iter': 12}
@@ -527,11 +520,9 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0212, 'n_source': 800, 'n_target': 100, 'lipton': 0.11, 'oracle': 0.1, 'iter': 6}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0196, 'n_source': 800, 'n_target': 100, 'lipton': 0.08, 'oracle': 0.08, 'iter': 15}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0187, 'n_source': 800, 'n_target': 100, 'lipton': 0.1, 'oracle': 0.11, 'iter': 31}
-
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0193, 'n_source': 800, 'n_target': 100, 'lipton': 0.26, 'oracle': 0.1, 'iter': 63}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0171, 'n_source': 800, 'n_target': 100, 'lipton': 0.16, 'oracle': 0.06, 'iter': 55}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0202, 'n_source': 800, 'n_target': 100, 'lipton': 0.11, 'oracle': 0.1, 'iter': 51}
-
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0201, 'n_source': 800, 'n_target': 100, 'lipton': 0.17, 'oracle': 0.08, 'iter': 46}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0213, 'n_source': 800, 'n_target': 100, 'lipton': 0.08, 'oracle': 0.07, 'iter': 19}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0184, 'n_source': 800, 'n_target': 100, 'lipton': 0.05, 'oracle': 0.06, 'iter': 64}
@@ -545,7 +536,6 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0181, 'n_source': 800, 'n_target': 100, 'lipton': 0.14, 'oracle': 0.08, 'iter': 48}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0182, 'n_source': 800, 'n_target': 100, 'lipton': 0.1, 'oracle': 0.11, 'iter': 36}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.02, 'n_source': 800, 'n_target': 100, 'lipton': 0.09, 'oracle': 0.09, 'iter': 96}
-}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0217, 'n_source': 800, 'n_target': 100, 'lipton': 0.12, 'oracle': 0.11, 'iter': 50}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0188, 'n_source': 800, 'n_target': 100, 'lipton': 0.09, 'oracle': 0.09, 'iter': 78}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.019, 'n_source': 800, 'n_target': 100, 'lipton': 0.02, 'oracle': 0.03, 'iter': 79}
@@ -557,7 +547,6 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0211, 'n_source': 800, 'n_target': 100, 'lipton': 0.1, 'oracle': 0.09, 'iter': 98}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0193, 'n_source': 800, 'n_target': 100, 'lipton': 0.07, 'oracle': 0.07, 'iter': 84}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0173, 'n_source': 800, 'n_target': 100, 'lipton': 0.1, 'oracle': 0.09, 'iter': 75}
-
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0186, 'n_source': 800, 'n_target': 100, 'lipton': 0.2, 'oracle': 0.09, 'iter': 86}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.017, 'n_source': 800, 'n_target': 100, 'lipton': 0.22, 'oracle': 0.08, 'iter': 77}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0183, 'n_source': 800, 'n_target': 100, 'lipton': 0.1, 'oracle': 0.1, 'iter': 85}
@@ -627,7 +616,6 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.02, 'n_source': 1600, 'n_target': 100, 'lipton': 0.16, 'oracle': 0.05, 'iter': 34}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0195, 'n_source': 1600, 'n_target': 100, 'lipton': 0.06, 'oracle': 0.06, 'iter': 83}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0223, 'n_source': 1600, 'n_target': 100, 'lipton': 0.11, 'oracle': 0.02, 'iter': 2}
-
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0176, 'n_source': 1600, 'n_target': 100, 'lipton': 0.19, 'oracle': 0.09, 'iter': 87}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0188, 'n_source': 1600, 'n_target': 100, 'lipton': 0.1, 'oracle': 0.1, 'iter': 19}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0176, 'n_source': 1600, 'n_target': 100, 'lipton': 0.15, 'oracle': 0.07, 'iter': 89}
@@ -843,7 +831,7 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0216, 'n_source': 6400, 'n_target': 100, 'lipton': 0.06, 'oracle': 0.05, 'iter': 45}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0174, 'n_source': 6400, 'n_target': 100, 'lipton': 0.09, 'oracle': 0.07, 'iter': 94}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0163, 'n_source': 6400, 'n_target': 100, 'lipton': 0.07, 'oracle': 0.07, 'iter': 75}
-'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0197, 'n_source': 6400, 'n_target': 100, 'lipton': 0.06, 'oracle': 0.06, 'iter': 37}
+{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0197, 'n_source': 6400, 'n_target': 100, 'lipton': 0.06, 'oracle': 0.06, 'iter': 37}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0191, 'n_source': 6400, 'n_target': 100, 'lipton': 0.08, 'oracle': 0.06, 'iter': 83}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0198, 'n_source': 6400, 'n_target': 100, 'lipton': 0.04, 'oracle': 0.03, 'iter': 97}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0175, 'n_source': 6400, 'n_target': 100, 'lipton': 0.03, 'oracle': 0.02, 'iter': 68}

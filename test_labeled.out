@@ -1,0 +1,1 @@
+{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0205, 'n_source': 800, 'n_target': 100, 'classical': 0.13, 'labeled': 0.03, 'iter': 1}
