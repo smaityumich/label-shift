@@ -116,6 +116,8 @@ class KDEClassifierQuick(BaseEstimator, ClassifierMixin):
         weights = np.array(weights)
         self.priors_ = [(xi.shape[0] / np.shape(x)[0])
                            for xi in training_sets] * (weights)
+        self.priors_ = self.priors_ / np.sum(self.priors_)
+        print(self.priors_)
         
         
     def predict_proba(self, X, reg = 1e-6):
