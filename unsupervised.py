@@ -29,7 +29,7 @@ class WithoutLabelClassifier():
         x_target = np.array(x_target)
         
         if method == 'lipton':
-            w, self.prop_target = prop_estimation.lipton_method(x_source, y_source, x_target)
+            self.prop_target, w = prop_estimation.lipton_method(x_source, y_source, x_target)
         self.cl = classifier.KDEClassifierQuick(kernel_df = self.kernel_df, beta = self.beta)
         self.cl.fit(x_source, y_source, weights= w)
         
