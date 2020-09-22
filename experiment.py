@@ -6,7 +6,7 @@ import sys
 ## For filename don't provide extension. It will be set to .out
 
 def f(filename, n_source, n_target, prop_target, prop_source = 0.5,\
-     labeled = True, d = 4, distance = 0.8, kernel_df = 3, beta = 3, iteration = 0):
+     labeled = True, d = 4, distance = 1, kernel_df = 3, beta = 3, iteration = 0):
     
     D = data.DataGenerator(d = d)
     x_source, y_source = D.getData(n_source, prop_source)
@@ -51,7 +51,9 @@ if __name__ == "__main__":
     kernel_df = beta
     print(f'n_s: {n_source}, n_t: {n_target}, kernel_df: {kernel_df}, beta: {beta}, iter: {iteration}, label: {labeled}')
 
-    f('exp6', int(n_source), int(n_target), 0.75, labeled=labeled, kernel_df=int(kernel_df), beta= beta, iteration=int(iteration))
+    f('exp7', int(n_source), int(n_target), 0.75, labeled=labeled, \
+        kernel_df=int(kernel_df), beta= beta,\
+             iteration=int(iteration), distance=1)
 
 
 

@@ -19,8 +19,9 @@ def lipton_method(x_source, y_source, x_target):
     
     xi = np.array([1-prop_target,prop_target])
     w = np.matmul(np.linalg.inv(confusion_matrix),xi)
-    prop_target = w[1]*prop_source
-    return prop_target, w
+    prop_targets = w*np.array([1-prop_source, prop_source])
+    prop_targets = prop_targets/np.sum(prop_targets)
+    return prop_targets[1], w
 
 
 if __name__ == "__main__":
