@@ -49,6 +49,7 @@ def excess_risk(parameters, x_source, y_source, x_target, y_target, x_test, y_te
         cl4.fit(x_source, y_source, x_target, method='lipton')
         y_pred = cl4.predict(x_test)
         return_dict['lipton'] = np.mean((y_test-y_pred)**2)
+        return_dict['prop-target'] =cl4.prop_target
         
 
 
