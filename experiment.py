@@ -51,7 +51,7 @@ if __name__ == "__main__":
     kernel_df = beta
     print(f'n_s: {n_source}, n_t: {n_target}, kernel_df: {kernel_df}, beta: {beta}, iter: {iteration}, label: {labeled}')
 
-    f('exp5', int(n_source), int(n_target), 0.75, labeled=labeled, kernel_df=int(kernel_df), beta= beta, iteration=int(iteration))
+    f('exp6', int(n_source), int(n_target), 0.75, labeled=labeled, kernel_df=int(kernel_df), beta= beta, iteration=int(iteration))
 
 
 
