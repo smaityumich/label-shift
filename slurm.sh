@@ -15,3 +15,4 @@ echo "SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 echo "SLURM_ARRAY_JOB_ID: " $SLURM_ARRAY_JOB_ID
 
 python3 experiment.py $SLURM_ARRAY_TASK_ID
+python3 experiment2.py $SLURM_ARRAY_TASK_ID

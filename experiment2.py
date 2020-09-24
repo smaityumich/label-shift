@@ -45,13 +45,15 @@ if __name__ == "__main__":
     k = j % 32
     n_source, n_target = sample_sizes[k, 0], sample_sizes[k, 1]
     labeled = label[k]
+    prop_source = 1/np.sqrt(n_source)
 
     #j = j // 17
     #beta = betas[j]
     kernel_df = beta
     print(f'n_s: {n_source}, n_t: {n_target}, kernel_df: {kernel_df}, beta: {beta}, iter: {iteration}, label: {labeled}')
 
-    f('exp11', int(n_source), int(n_target), 0.75, labeled=labeled, \
+    f(filename= 'exp12', n_source= int(n_source), n_target= int(n_target), prop_target = 0.75,\
+         prop_source= prop_source,  labeled=labeled, \
         kernel_df=int(kernel_df), beta= beta,\
              iteration=int(iteration), distance=4)
 
