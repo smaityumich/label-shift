@@ -42,7 +42,7 @@ if __name__ == "__main__":
     iteration = i % 100
 
     j = i // 100
-    k = j % 34
+    k = j % 32
     n_source, n_target = sample_sizes[k, 0], sample_sizes[k, 1]
     labeled = label[k]
 
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     kernel_df = beta
     print(f'n_s: {n_source}, n_t: {n_target}, kernel_df: {kernel_df}, beta: {beta}, iter: {iteration}, label: {labeled}')
 
-    f('exp9', int(n_source), int(n_target), 0.75, labeled=labeled, \
+    f('exp10', int(n_source), int(n_target), 0.75, labeled=labeled, \
         kernel_df=int(kernel_df), beta= beta,\
              iteration=int(iteration), distance=4)
 

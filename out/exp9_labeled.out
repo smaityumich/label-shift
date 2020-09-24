@@ -24,7 +24,6 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0203, 'n_source': 150, 'n_target': 50, 'classical': 0.245, 'labeled': 0.145, 'iter': 18}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0185, 'n_source': 150, 'n_target': 50, 'classical': 0.195, 'labeled': 0.1325, 'iter': 44}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0195, 'n_source': 150, 'n_target': 50, 'classical': 0.2125, 'labeled': 0.155, 'iter': 16}
-
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0168, 'n_source': 150, 'n_target': 50, 'classical': 0.185, 'labeled': 0.125, 'iter': 35}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0156, 'n_source': 150, 'n_target': 50, 'classical': 0.245, 'labeled': 0.1725, 'iter': 22}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0185, 'n_source': 150, 'n_target': 50, 'classical': 0.18, 'labeled': 0.125, 'iter': 25}
@@ -149,7 +148,6 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.021, 'n_source': 350, 'n_target': 50, 'classical': 0.235, 'labeled': 0.105, 'iter': 41}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0175, 'n_source': 350, 'n_target': 50, 'classical': 0.215, 'labeled': 0.125, 'iter': 39}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0172, 'n_source': 350, 'n_target': 50, 'classical': 0.22, 'labeled': 0.13, 'iter': 51}
-68}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.018, 'n_source': 350, 'n_target': 50, 'classical': 0.2275, 'labeled': 0.1175, 'iter': 70}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0178, 'n_source': 350, 'n_target': 50, 'classical': 0.225, 'labeled': 0.0975, 'iter': 48}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0198, 'n_source': 350, 'n_target': 50, 'classical': 0.21, 'labeled': 0.08, 'iter': 53}
@@ -190,7 +188,6 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0197, 'n_source': 350, 'n_target': 50, 'classical': 0.2, 'labeled': 0.1125, 'iter': 87}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0201, 'n_source': 350, 'n_target': 50, 'classical': 0.21, 'labeled': 0.125, 'iter': 92}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0192, 'n_source': 350, 'n_target': 50, 'classical': 0.23, 'labeled': 0.125, 'iter': 94}
-}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0193, 'n_source': 350, 'n_target': 50, 'classical': 0.21, 'labeled': 0.135, 'iter': 84}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0193, 'n_source': 350, 'n_target': 50, 'classical': 0.1925, 'labeled': 0.12, 'iter': 81}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0189, 'n_source': 350, 'n_target': 50, 'classical': 0.2675, 'labeled': 0.1625, 'iter': 88}
@@ -620,7 +617,6 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.019, 'n_source': 50, 'n_target': 350, 'classical': 0.1875, 'labeled': 0.18, 'iter': 20}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0208, 'n_source': 50, 'n_target': 350, 'classical': 0.195, 'labeled': 0.165, 'iter': 28}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0214, 'n_source': 50, 'n_target': 350, 'classical': 0.17, 'labeled': 0.15, 'iter': 22}
-23}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0205, 'n_source': 50, 'n_target': 350, 'classical': 0.175, 'labeled': 0.155, 'iter': 29}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0186, 'n_source': 50, 'n_target': 350, 'classical': 0.195, 'labeled': 0.18, 'iter': 27}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0196, 'n_source': 50, 'n_target': 350, 'classical': 0.155, 'labeled': 0.14, 'iter': 34}
@@ -648,7 +644,6 @@
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0198, 'n_source': 50, 'n_target': 350, 'classical': 0.1325, 'labeled': 0.1175, 'iter': 45}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0191, 'n_source': 50, 'n_target': 350, 'classical': 0.145, 'labeled': 0.135, 'iter': 52}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0195, 'n_source': 50, 'n_target': 350, 'classical': 0.15, 'labeled': 0.14, 'iter': 51}
-7}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0177, 'n_source': 50, 'n_target': 350, 'classical': 0.15, 'labeled': 0.145, 'iter': 39}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0206, 'n_source': 50, 'n_target': 350, 'classical': 0.135, 'labeled': 0.1175, 'iter': 58}
 {'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0193, 'n_source': 50, 'n_target': 350, 'classical': 0.155, 'labeled': 0.135, 'iter': 49}
