@@ -10,14 +10,14 @@ class DataGenerator():
     def generateY(self, n = 100, prop = 0.5):
         self.prop = prop
         self.n = n
-        self.y = np.random.binomial(1, self.prop, (self.n,))
-        return np.array(self.y)
+        y = np.random.binomial(1, self.prop, (self.n,))
+        return np.array(y)
         
-    def generateX(self, distance = 0):
+    def generateX(self, y, distance = 0):
         self.mu = distance/np.sqrt(self.d)
         f = lambda y : np.random.normal(loc = y*self.mu, scale = 1, size = (self.d,))  ## Generates data from N_d(mu, I_d) if label=1, else from N_d(0,I_d) if label=0
-        self.x = [f(y) for y in self.y]
-        return np.array(self.x)
+        x = [f(i) for i in y]
+        return np.array(x)
         
     def bayesDecision(self, x):
         x = np.array(x)
@@ -31,16 +31,16 @@ class DataGenerator():
 
     def bayes_error(self, prop = 0.5, distance = 0.8):
         y = self.generateY(10000, prop)
-        x = self.generateX(distance)
+        x = self.generateX(y, distance)
         #mu = distance/np.sqrt(self.d)
         #log_odds = np.log(prop/(1-prop))
         #return 1 - prop * norm.cdf(mu/2 + log_odds/mu) - (1-prop) * norm.cdf(mu/2 - log_odds/mu)
         return np.mean((y - np.array(self.bayesY(x)))**2)
         
     def getData(self, n = 100, prop = 0.5, distance = 0.8):
-        self.generateY(n, prop)
-        self.generateX(distance)
-        return np.array(self.x), np.array(self.y)
+        y = self.generateY(n, prop)
+        x = self.generateX(y, distance)
+        return np.array(x), np.array(y)
 
 
 if __name__ == "__main__":
