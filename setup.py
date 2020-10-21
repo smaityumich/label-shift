@@ -16,6 +16,7 @@ def excess_risk(parameters, x_source, y_source, x_target, y_target, x_test, y_te
     return_dict['bayes_error'] = bayes_error
     return_dict['n_source'] = np.shape(x_source)[0]
     return_dict['n_target'] = np.shape(x_target)[0]
+    return_dict['labeled'] = labeled
 
     if labeled:
 

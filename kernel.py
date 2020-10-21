@@ -35,11 +35,10 @@ class Legendre():
         diff = (expanded_x - expanded_data)/self.h
         eval_diff = self.ukernel(diff)
         eval_kernels = np.multiply.reduce(eval_diff, axis = 2)
-        unnurmalized_density = np.mean(eval_kernels, axis = 1)
-        return unnurmalized_density + reg
+        unnormalized_density = np.mean(eval_kernels, axis = 1)
+        return (unnormalized_density + reg)/(self.h ** np.shape(self.x_data)[1])
 
-    def eval_normalized(self, x):
-        return self.eval(x)/(self.h ** np.shape(self.x_data)[1])
+
 
 
 

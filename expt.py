@@ -2,10 +2,14 @@ import numpy as np
 import setup
 import data
 import sys
+import os
+
+
+
 
 ## For filename don't provide extension. It will be set to .out
 
-def f(filename, n_source, n_target, prop_target, prop_source = 0.5,\
+def f(n_source, n_target, prop_target, prop_source = 0.5,\
      labeled = True, d = 4, distance = 1, kernel_df = 3, beta = 3, iteration = 0):
     
     D = data.DataGenerator(d = d)
@@ -18,27 +22,21 @@ def f(filename, n_source, n_target, prop_target, prop_source = 0.5,\
          y_target, x_test, y_test, bayes_error, labeled=labeled)
 
     return_dict['iter'] = iteration
-
-    if labeled:
-        modified_filename = filename + '_labeled.out'
-        with open(modified_filename, 'a') as f:
-            f.writelines(str(return_dict)+'\n')
-
-    else:
-        modified_filename = filename + '_unlabeled.out'
-        with open(modified_filename, 'a') as f:
-            f.writelines(str(return_dict) + '\n')
-
-
-    print(str(return_dict))
+    return return_dict
 
 
 if __name__ == "__main__":
+
+    if not os.path.exists('temp/'):
+        os.mkdir('temp/')
+
+
     beta = 3
     sample_sizes = np.load('sample_sizes.npy')
     label = np.load('label.npy')
     print('Done')
     i = int(sys.argv[1])
+    filename = f'{i}.txt'
     iteration = i % 100
 
     j = i // 100
@@ -51,20 +49,20 @@ if __name__ == "__main__":
     kernel_df = beta
     print(f'n_s: {n_source}, n_t: {n_target}, kernel_df: {kernel_df}, beta: {beta}, iter: {iteration}, label: {labeled}')
 
-    f('exp13', int(n_source), int(n_target), 0.75, labeled=labeled, \
+    return_dict1 = f(int(n_source), int(n_target), 0.75, labeled=labeled, \
         kernel_df=int(kernel_df), beta= beta,\
              iteration=int(iteration), distance=4)
 
+    return_dict2 = f(int(n_source), int(n_target), 0.75, prop_source=1/np.sqrt(n_source), labeled=labeled, \
+        kernel_df=int(kernel_df), beta= beta,\
+             iteration=int(iteration), distance=4)
+
+    return_dict1['setup'] = 'constant-prop-source'
+    return_dict1['setup'] = 'decreasing-prop-source'
 
 
-    
+    with open('temp/const_' + filename, 'w') as f:
+        f.writelines(str(return_dict1))
 
-
-
-
-
-
-    
-    
-
-
+    with open('temp/dec_' + filename, 'w') as f:
+        f.writelines(str(return_dict2))

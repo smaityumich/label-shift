@@ -126,7 +126,7 @@ class KDEClassifierQuick(BaseEstimator, ClassifierMixin):
         posterior_probs = self.densities * self.priors_
         return posterior_probs / posterior_probs.sum(1, keepdims=True)
         
-    def predict(self, X, reg = 1e-6):
+    def predict(self, X, reg = 0):
         return self.classes_[np.argmax(self.predict_proba(X, reg = reg), 1)]
 
 
