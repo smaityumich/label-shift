@@ -58,11 +58,11 @@ if __name__ == "__main__":
              iteration=int(iteration), distance=4)
 
     return_dict1['setup'] = 'constant-prop-source'
-    return_dict1['setup'] = 'decreasing-prop-source'
+    return_dict2['setup'] = 'decreasing-prop-source'
 
 
     with open('temp/const_' + filename, 'w') as f:
-        f.writelines(str(return_dict1))
+        f.writelines(str(return_dict1)+"\n")
 
     with open('temp/dec_' + filename, 'w') as f:
-        f.writelines(str(return_dict2))
+        f.writelines(str(return_dict2)+"\n")
