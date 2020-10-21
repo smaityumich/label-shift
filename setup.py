@@ -32,7 +32,7 @@ def excess_risk(parameters, x_source, y_source, x_target, y_target, x_test, y_te
         cl2.fit(x_source, y_source, x_target, y_target)
         y_pred = cl2.predict(x_test)
         return_dict['supervised'] = np.mean((y_test-y_pred)**2)
-        return_dict['lipton'], return_dict['oracle'], return_dict['prop-target-estimate'] = np.nan, np.nan, np.nan
+        return_dict['lipton'], return_dict['oracle'], return_dict['prop-target-estimate'] = ['nan'] * 3
         
 
         # Mixture classifier
@@ -60,7 +60,7 @@ def excess_risk(parameters, x_source, y_source, x_target, y_target, x_test, y_te
         cl5.fit(x_source, y_source, [1-prop_target, prop_target])
         y_pred = cl5.predict(x_test)
         return_dict['oracle'] = np.mean((y_test-y_pred)**2)
-        return_dict['classical'], return_dict['supervised'] = np.nan, np.nan
+        return_dict['classical'], return_dict['supervised'] = ['nan']*2
         
 
     return return_dict
