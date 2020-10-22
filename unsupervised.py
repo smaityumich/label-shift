@@ -32,7 +32,7 @@ class WithoutLabelClassifier():
         self.prop_target, w = prop_estimation.lipton_method(x_source, y_source, x_target,\
              kernel_df=self.kernel_df, beta = self.beta)
         self.cl = classifier.KDEClassifierQuick(kernel_df = self.kernel_df, beta = self.beta)
-        #print('Lipton weights' + str(w))
+        print('Lipton weights' + str(w))
         #print('Prop target:' + str(self.prop_target))
         self.cl.fit(x_source, y_source, weights= w)
         

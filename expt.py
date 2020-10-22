@@ -15,7 +15,7 @@ def f(n_source, n_target, prop_target, prop_source = 0.5,\
     D = data.DataGenerator(d = d)
     x_source, y_source = D.getData(n_source, prop_source, distance=distance)
     x_target, y_target = D.getData(n_target, prop_target, distance=distance)
-    x_test, y_test = D.getData(400, prop_target, distance=distance)
+    x_test, y_test = D.getData(1000, prop_target, distance=distance)
     bayes_error = D.bayes_error(prop=prop_target, distance=distance)
     parameter = beta, kernel_df, prop_target
     return_dict = setup.excess_risk(parameter, x_source, y_source, x_target,\
@@ -51,12 +51,12 @@ if __name__ == "__main__":
 
     return_dict1 = f(int(n_source), int(n_target), 0.75, labeled=labeled, \
         kernel_df=int(kernel_df), beta= beta,\
-             iteration=int(iteration), distance=4)
+             iteration=int(iteration), distance=2)
 
     
 
     return_dict1['setup'] = 'constant-prop-source'
-    #print(return_dict1)
+    print(return_dict1)
 
 
     with open('temp/const_' + filename, 'w') as f:
