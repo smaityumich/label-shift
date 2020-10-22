@@ -53,16 +53,11 @@ if __name__ == "__main__":
         kernel_df=int(kernel_df), beta= beta,\
              iteration=int(iteration), distance=4)
 
-    return_dict2 = f(int(n_source), int(n_target), 0.75, prop_source=1/np.sqrt(n_source), labeled=labeled, \
-        kernel_df=int(kernel_df), beta= beta,\
-             iteration=int(iteration), distance=4)
+    
 
     return_dict1['setup'] = 'constant-prop-source'
-    return_dict2['setup'] = 'decreasing-prop-source'
+    #print(return_dict1)
 
 
     with open('temp/const_' + filename, 'w') as f:
         f.writelines(str(return_dict1)+"\n")
-
-    with open('temp/dec_' + filename, 'w') as f:
-        f.writelines(str(return_dict2)+"\n")

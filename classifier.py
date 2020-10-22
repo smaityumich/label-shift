@@ -114,10 +114,11 @@ class KDEClassifierQuick(BaseEstimator, ClassifierMixin):
             self.models_.append(L)
                         
         weights = np.array(weights)
-        self.priors_ = [(xi.shape[0] / np.shape(x)[0])
-                           for xi in training_sets] * (weights)
+        #self.priors_ = [(xi.shape[0] / np.shape(x)[0])
+        #                   for xi in training_sets] * (weights)
+        self.priors_ = weights
         self.priors_ = self.priors_ / np.sum(self.priors_)
-        print(self.priors_)
+        #print(self.priors_)
         
         
     def predict_proba(self, X, reg = 1e-6):
@@ -126,7 +127,7 @@ class KDEClassifierQuick(BaseEstimator, ClassifierMixin):
         posterior_probs = self.densities * self.priors_
         return posterior_probs / posterior_probs.sum(1, keepdims=True)
         
-    def predict(self, X, reg = 0):
+    def predict(self, X, reg = 1e-9):
         return self.classes_[np.argmax(self.predict_proba(X, reg = reg), 1)]
 
 

@@ -49,17 +49,20 @@ def excess_risk(parameters, x_source, y_source, x_target, y_target, x_test, y_te
         #bandwidth = n ** (-1/(2*beta+d))
         cl4 = unsupervised.WithoutLabelClassifier(kernel_df=kernel_df, beta = beta)
         cl4.fit(x_source, y_source, x_target, method='lipton')
-        y_pred = cl4.predict(x_test)
-        return_dict['lipton'] = np.mean((y_test-y_pred)**2)
+        y_pred_lipton = cl4.predict(x_test)
+        return_dict['lipton'] = np.mean((y_test-y_pred_lipton)**2)
         return_dict['prop-target-estimate'] =cl4.prop_target
         
-
+        #print('Original prop target'+str(prop_target))
 
         # Oracle classifier
         cl5 = classifier.KDEClassifierQuick(kernel_df=kernel_df, beta=beta)
         cl5.fit(x_source, y_source, [1-prop_target, prop_target])
-        y_pred = cl5.predict(x_test)
-        return_dict['oracle'] = np.mean((y_test-y_pred)**2)
+        y_pred_oracle = cl5.predict(x_test)
+        return_dict['oracle'] = np.mean((y_test-y_pred_oracle)**2)
+        #print('Oracle == Lipton')
+        #print(np.mean(y_pred_lipton==y_pred_oracle))
+
         return_dict['classical'], return_dict['supervised'] = ['nan']*2
         
 
