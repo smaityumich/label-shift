@@ -1,1 +1,0 @@
-{'kernel_df': 3, 'beta': 3, 'bayes_error': 0.0631, 'n_source': 120, 'n_target': 40, 'labeled': True, 'classical': 0.276, 'supervised': 0.134, 'lipton': 'nan', 'oracle': 'nan', 'prop-target-estimate': 'nan', 'iter': 0, 'setup': 'constant-prop-source'}
