@@ -48,6 +48,7 @@ if __name__ == "__main__":
     #beta = betas[j]
     kernel_df = beta
     print(f'n_s: {n_source}, n_t: {n_target}, kernel_df: {kernel_df}, beta: {beta}, iter: {iteration}, label: {labeled}')
+    prop_source = 1/np.sqrt(n_source)
 
     if (labeled == False) and (n_source == 1000):
         m = 10
@@ -59,12 +60,12 @@ if __name__ == "__main__":
     return_dict = []
     for _ in range(m):
 
-        return_dict1 = f(int(n_source), int(n_target), 0.75, labeled=labeled, kernel_df=int(kernel_df), beta= beta,\
+        return_dict1 = f(int(n_source), int(n_target), 0.75, prop_source= prop_source, labeled=labeled, kernel_df=int(kernel_df), beta= beta,\
                     iteration=int(iteration), distance=2)
 
     
     
-        return_dict1['setup'] = 'constant-prop-source'
+        return_dict1['setup'] = 'dec-prop-source'
         return_dict.append(return_dict1)
     
     print(return_dict)
