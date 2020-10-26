@@ -48,7 +48,7 @@ if __name__ == "__main__":
     #beta = betas[j]
     kernel_df = beta
     print(f'n_s: {n_source}, n_t: {n_target}, kernel_df: {kernel_df}, beta: {beta}, iter: {iteration}, label: {labeled}')
-    prop_source = 1/np.sqrt(n_source)
+    prop_source = np.min([20/n_source, 0.5])
 
     if (labeled == False) and (n_source == 1000):
         m = 10

@@ -12,5 +12,10 @@ for f in os.listdir(arg.target_dir):
     filename = arg.target_dir + f
     os.system("cat "+filename+" >> "+arg.dest_file)
 
+
+
+os.system("sed -i \'$ s/.$//\' "+arg.dest_file)
+
+
 if arg.clear:
     os.system("rm "+arg.target_dir+"*")
