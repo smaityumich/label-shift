@@ -4,7 +4,7 @@ from sklearn import metrics
 import classifier
 
 
-def lipton_method(x_source, y_source, x_target, kernel_df= 3, beta = 3):
+def lipton_method(x_source, y_source, x_target, kernel_df= 3, beta = 3, reg = 0.01):
     
 
     x_source = np.array(x_source)
@@ -20,7 +20,7 @@ def lipton_method(x_source, y_source, x_target, kernel_df= 3, beta = 3):
     prop_target = np.mean(cl.predict(x_target))
     
     xi = np.array([1-prop_target,prop_target])
-    w = np.matmul(np.linalg.inv(confusion_matrix),xi)
+    w = np.matmul(np.linalg.inv(confusion_matrix + reg*np.diag([1, 1])),xi)
     prop_targets = w*np.array([1-prop_source, prop_source])
     if prop_targets[0] <0:
         prop_targets[0] = 0
