@@ -48,7 +48,7 @@ if __name__ == "__main__":
     #beta = betas[j]
     kernel_df = beta
     print(f'n_s: {n_source}, n_t: {n_target}, kernel_df: {kernel_df}, beta: {beta}, iter: {iteration}, label: {labeled}')
-    prop_source = 0.5
+    prop_source = 10/(n_source)
 
     if (labeled == False) and (n_source == 1000):
         m = 10
