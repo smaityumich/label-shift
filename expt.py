@@ -59,13 +59,33 @@ if __name__ == "__main__":
         
     return_dict = []
     for _ in range(m):
-
+        
+        prop_source = 0.5
         return_dict1 = f(int(n_source), int(n_target), 0.75, prop_source= prop_source, labeled=labeled, kernel_df=int(kernel_df), beta= beta,\
                     iteration=int(iteration), distance=2)
 
     
     
-        return_dict1['setup'] = 'dec-prop-source'
+        return_dict1['setup'] = 'const'
+        return_dict.append(return_dict1)
+
+
+        prop_source = 2/np.sqrt(n_source)
+        return_dict1 = f(int(n_source), int(n_target), 0.75, prop_source= prop_source, labeled=labeled, kernel_df=int(kernel_df), beta= beta,\
+                    iteration=int(iteration), distance=2)
+
+    
+    
+        return_dict1['setup'] = 'dec-sqrt'
+        return_dict.append(return_dict1)
+
+        prop_source = 10/(n_source)
+        return_dict1 = f(int(n_source), int(n_target), 0.75, prop_source= prop_source, labeled=labeled, kernel_df=int(kernel_df), beta= beta,\
+                    iteration=int(iteration), distance=2)
+
+    
+    
+        return_dict1['setup'] = 'dec-linear'
         return_dict.append(return_dict1)
     
     print(return_dict)
