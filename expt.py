@@ -40,7 +40,7 @@ if __name__ == "__main__":
     iteration = i % 100
 
     j = i // 100
-    k = j % 28
+    k = j % 30
     n_source, n_target = sample_sizes[k, 0], sample_sizes[k, 1]
     labeled = label[k]
 
