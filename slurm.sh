@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=ls-sim
 #SBATCH --output=logs/ls-sim_%A_%a.out
-#SBATCH --array=0-2999
+#SBATCH --array=3000-3399
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem-per-cpu=1gb
