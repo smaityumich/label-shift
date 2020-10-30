@@ -40,7 +40,7 @@ if __name__ == "__main__":
     iteration = i % 100
 
     j = i // 100
-    k = j % 30
+    k = j % 34
     n_source, n_target = sample_sizes[k, 0], sample_sizes[k, 1]
     labeled = label[k]
 
@@ -59,32 +59,29 @@ if __name__ == "__main__":
         
     return_dict = []
     for _ in range(m):
-        
-        prop_source = 0.5
-        return_dict1 = f(int(n_source), int(n_target), 0.75, prop_source= prop_source, labeled=labeled, kernel_df=int(kernel_df), beta= beta,\
-                    iteration=int(iteration), distance=2)
+        if n_target == 100:
+            prop_source1, prop_source2, prop_source3 = 0.5, 0.5 * np.sqrt(20/n_source), 0.5 * 20 / n_source
+        elif n_target == 40: 
+            prop_source1, prop_source2, prop_source3 = 0.5, 0.5 * np.sqrt(25/n_source), 0.5 * 25 / n_source
+        else: 
+            prop_source1, prop_source2, prop_source3 = 0.5, 0.5, 0.5
 
-    
-    
+
+        return_dict1 = f(int(n_source), int(n_target), 0.75, prop_source= prop_source1, labeled=labeled, kernel_df=int(kernel_df), beta= beta,\
+                    iteration=int(iteration), distance=2)
         return_dict1['setup'] = 'const'
         return_dict.append(return_dict1)
 
 
-        prop_source = 2/np.sqrt(n_source)
-        return_dict1 = f(int(n_source), int(n_target), 0.75, prop_source= prop_source, labeled=labeled, kernel_df=int(kernel_df), beta= beta,\
+            
+        return_dict1 = f(int(n_source), int(n_target), 0.75, prop_source= prop_source2, labeled=labeled, kernel_df=int(kernel_df), beta= beta,\
                     iteration=int(iteration), distance=2)
-
-    
-    
         return_dict1['setup'] = 'dec-sqrt'
         return_dict.append(return_dict1)
 
-        prop_source = 10/(n_source)
-        return_dict1 = f(int(n_source), int(n_target), 0.75, prop_source= prop_source, labeled=labeled, kernel_df=int(kernel_df), beta= beta,\
+            
+        return_dict1 = f(int(n_source), int(n_target), 0.75, prop_source= prop_source3, labeled=labeled, kernel_df=int(kernel_df), beta= beta,\
                     iteration=int(iteration), distance=2)
-
-    
-    
         return_dict1['setup'] = 'dec-linear'
         return_dict.append(return_dict1)
     
