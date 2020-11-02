@@ -10,7 +10,7 @@ import os
 ## For filename don't provide extension. It will be set to .out
 
 def f(n_source, n_target, prop_target, prop_source = 0.5,\
-     labeled = True, d = 4, distance = 1, kernel_df = 3, beta = 3, iteration = 0):
+     labeled = True, d = 3, distance = 1, kernel_df = 3, beta = 3, iteration = 0):
     
     D = data.DataGenerator(d = d)
     x_source, y_source = D.getData(n_source, prop_source, distance=distance)
@@ -31,7 +31,7 @@ if __name__ == "__main__":
         os.mkdir('temp/')
 
 
-    beta = 3
+    beta = 2
     sample_sizes = np.load('sample_sizes.npy')
     label = np.load('label.npy')
     #print('Done')
